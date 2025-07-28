@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data White</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <!-- conventional way for flask is not reliable -->
+
+    </head>
+    <body>
+        <h1>UFC Fight Predictor</h1>
+        <p>Cuz the judges dont know shit!</p>
+
+        <div class="menu">
+            <a href="/fighters">Fighter Stats</a>
+            <a href="#">Upcoming Fights</a>
+            <a href="{{ url_for('predict') }}">Fight Prediction</a>
+        </div>
+    </body>
+</html>

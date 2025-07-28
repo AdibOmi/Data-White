@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Israel Adesanya",
+    "nickname": "The Last Stylebender",
+    "division": "Middleweight",
+    "record": "24-3",
+    "height": "6'4\"",
+    "reach": "80 in",
+    "style": "Striker"
+  },
+  {
+    "name": "Alex Pereira",
+    "nickname": "Poatan",
+    "division": "Light Heavyweight",
+    "record": "10-2",
+    "height": "6'4\"",
+    "reach": "79 in",
+    "style": "Striker"
+  }
+]

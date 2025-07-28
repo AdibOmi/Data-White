@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fighter Stats</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Fighters' Records</h1>
+    <a href="/">Back To Home</a>
+
+    <ul>
+        {% for fighter in fighters %}
+        <li>
+            <strong>{{fighter.name}}</strong>
+            ({{fighter.nickname}})-{{fighter.division}}
+            -{{fighter.record}}<br>
+            Height: {{fighter.height}}, Reach: {{fighter.reach}},
+            Style: {{fighter.style}}
+        </li>
+        <br>
+        {% endfor %}
+    </ul>
+</body>
+</html>

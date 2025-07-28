@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prection Result!</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body> 
+        <h1>Data White Predicts...</h1>
+        <p>
+            <strong>{{f1.name}}</strong> vs <strong>{{f2.name}}</strong>
+
+        </p>
+        <h2>The Winner: {{winner}}</h2>
+        <br>
+        <a href="/predict">Predict Another Fight</a>
+        <a href="/">Back To Home</a>
+    </body>
+</html>

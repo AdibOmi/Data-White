@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tap or Cap – Predict</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Fight Prediction</h1>
+  <p>Select two fighters to predict the winner:</p>
+
+  <form method="POST" action="{{ url_for('predict') }}">
+    <label for="fighter1">Fighter 1:</label>
+    <select name="fighter1" required>
+      {% for fighter in fighters %}
+        <option value="{{ fighter.name }}">{{ fighter.name }}</option>
+      {% endfor %}
+    </select>
+
+    <br><br>
+
+    <label for="fighter2">Fighter 2:</label>
+    <select name="fighter2" required>
+      {% for fighter in fighters %}
+        <option value="{{ fighter.name }}">{{ fighter.name }}</option>
+      {% endfor %}
+    </select>
+
+    <br><br>
+    <button type="submit">Predict</button>
+  </form>
+
+  <br>
+  <a href="/">← Back to Home</a>
+</body>
+</html>
